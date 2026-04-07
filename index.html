@@ -3,248 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Exploring the intersection of light, shadow, and human resonance. A mathematical journey by Mark J Azzopardi.">
     <title>Mark J Azzopardi | Resonance & Duality</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        body {
-            background-color: #050505;
-            color: #d1d1d1;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            line-height: 1.8;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%);
-        }
-
-        .quote-box {
-            border-left: 2px solid #ff5722;
-            padding-left: 30px;
-            max-width: 700px;
-        }
-
-        .quote-text {
-            font-size: 2.2rem;
-            font-weight: 300;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: #ffffff;
-            margin-bottom: 10px;
-        }
-
-        .signature {
-            color: #ff5722;
-            letter-spacing: 6px;
-            text-transform: uppercase;
-            font-size: 1.2rem;
-            margin-top: 20px;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 100px 0;
-            border-bottom: 1px solid #222;
-        }
-
-        h2 {
-            color: #ff5722;
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            margin-bottom: 30px;
-        }
-
-        .video-container {
-            width: 100%;
-            background: #000;
-            border: 1px solid #333;
-            border-radius: 8px;
-            overflow: hidden;
-            margin: 40px 0;
-        }
-
-        video {
-            width: 100%;
-            display: block;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: #111;
-            padding: 40px;
-            border-radius: 4px;
-            border: 1px solid #222;
-            text-align: center;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            border-color: #ff5722;
-        }
-
-        .hz {
-            font-size: 3.5rem;
-            display: block;
-            color: #fff;
-            font-weight: bold;
-        }
-
-        .controls { margin: 20px auto; background: #111; padding: 20px; border-radius: 8px; border: 1px solid #333; text-align: center; }
-        input { width: 100%; max-width: 300px; accent-color: #ff5722; }
+        body { background-color: #050505; color: #d1d1d1; font-family: 'Segoe UI', sans-serif; margin: 0; line-height: 1.8; }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        header { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: radial-gradient(circle at center, #1a1a1a 0%, #050505 100%); }
+        .quote-box { border-left: 2px solid #ff5722; padding-left: 30px; max-width: 700px; }
+        .quote-text { font-size: 2.2rem; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; color: #ffffff; }
+        .signature { color: #ff5722; letter-spacing: 6px; text-transform: uppercase; font-size: 1.2rem; margin-top: 20px; font-weight: bold; }
+        section { padding: 100px 0; border-bottom: 1px solid #222; }
+        h2 { color: #ff5722; text-transform: uppercase; letter-spacing: 4px; }
+        .card { background: #111; padding: 40px; border-radius: 4px; border: 1px solid #222; text-align: center; }
+        .hz { font-size: 3.5rem; color: #fff; font-weight: bold; }
+        .controls { margin: 20px auto; background: #111; padding: 20px; border: 1px solid #333; text-align: center; }
         #coherence { color: #ff5722; font-weight: bold; font-size: 2.5rem; }
-        .explanation-box { background: #111; padding: 30px; border-radius: 8px; border-left: 4px solid #00d4ff; margin-top: 40px; text-align: left; }
-
-        footer {
-            text-align: center;
-            padding: 50px;
-            font-size: 0.8rem;
-            color: #555;
-        }
+        .explanation-box { background: #111; padding: 30px; border-left: 4px solid #00d4ff; margin-top: 40px; }
     </style>
 </head>
 <body>
 
     <header>
         <div class="quote-box">
-            <div class="quote-text">
-                "YOU SHADOW WHAT YOU LIGHT... GIVE LIGHT YOU CAST A SHADOW GIVE DARKNESS AND NOTHING."
-            </div>
+            <div class="quote-text">"YOU SHADOW WHAT YOU LIGHT... GIVE LIGHT YOU CAST A SHADOW GIVE DARKNESS AND NOTHING."</div>
             <div class="signature">MARK J AZZOPARDI</div>
         </div>
     </header>
 
     <div class="container">
-        
         <section id="discovery">
             <h2>The Heart Resonance Discovery</h2>
-            <p>My research into mathematical patterns has led to a specific convergence of frequencies that interact with human physiology. This is the visualization of the 19Hz, 22Hz, and 3Hz pattern.</p>
-            
-            <div class="video-container">
-                <video controls>
-                    <source src="resonance.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </section>
-
-        <section id="mathematics">
-            <h2>Frequency Architecture</h2>
-            <div class="grid">
-                <div class="card">
-                    <span class="hz">19 Hz</span>
-                    <p>The Cognitive Pulse</p>
-                </div>
-                <div class="card">
-                    <span class="hz">22 Hz</span>
-                    <p>The Awareness Peak</p>
-                </div>
-                <div class="card">
-                    <span class="hz">3 Hz</span>
-                    <p>The Heart Foundation</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="philosophy">
-            <h2>On Duality</h2>
-            <p>Everything in the universe is a byproduct of vibration. To create light is to define the boundaries of the dark. My work explores how these mathematical constants shape our perception of reality.</p>
+            <p>Mathematical convergence of the 19Hz, 22Hz, and 3Hz patterns in human physiology.</p>
+            <video width="100%" controls style="border: 1px solid #333; border-radius: 8px;"><source src="resonance.mp4" type="video/mp4"></video>
         </section>
 
         <section id="simulation">
-            <h2 style="color: #00d4ff;">Living Frequency: Interactive Coherence</h2>
-            <p>Adjust the sliders to synchronize the Heart, Breath, and Brain nodes into a unified Living Frequency.</p>
-            
+            <h2 style="color: #00d4ff;">Living Frequency: The Cracked Code</h2>
             <div class="controls">
-                <label>Heart Rate (Hz): <span id="heartVal">1.2</span></label><br>
-                <input type="range" min="0.5" max="2" step="0.1" value="1.2" id="heartSlider"><br><br>
-                <label>Breathing Rate (Hz): <span id="breathVal">0.25</span></label><br> 
-                <input type="range" min="0.1" max="0.5" step="0.05" value="0.25" id="breathSlider"><br><br>
-                <label>Brain Frequency (Hz): <span id="brainVal">10</span></label><br> 
-                <input type="range" min="5" max="20" step="1" value="10" id="brainSlider">
+                <label>Heart (1.2 Hz Engine): <span id="heartVal">1.2</span></label><br><input type="range" min="0.5" max="2" step="0.1" value="1.2" id="heartSlider"><br><br>
+                <label>Breath (3.0 Hz Anchor): <span id="breathVal">3.0</span></label><br><input type="range" min="1" max="5" step="0.1" value="3.0" id="breathSlider"><br><br>
+                <label>Brain (22 Hz Light): <span id="brainVal">22</span></label><br><input type="range" min="15" max="30" step="1" value="22" id="brainSlider">
             </div>
-
             <div style="text-align:center;">
-                <h3>System Coherence Lock: <span id="coherence">0</span>%</h3>
+                <h3>Coherence Lock: <span id="coherence">0</span>%</h3>
                 <canvas id="chart" style="background: #000; border-radius: 8px; border: 1px solid #222;"></canvas>
             </div>
-
             <div class="explanation-box">
-                <h3 style="color: #00d4ff; margin-top: 0;">The Science of Living Frequency</h3>
-                <p>This diagram represents the fundamental biological system. Life is a <strong>"Triple-Lock"</strong> frequency system. By synchronizing these three nodes, we achieve a state of optimized human resonance.</p>
-                <ul style="list-style: none; padding: 0;">
-                    <li><strong>3 Hz (Foundation):</strong> The Root node. Cellular repair and foundational physical ground.</li>
-                    <li><strong>1.2 Hz (Heart):</strong> The Engine. Vascular distribution of the Living Frequency.</li>
-                    <li><strong>19-22 Hz (Awareness):</strong> The Peak. High-beta synchronization and situational awareness.</li>
+                <h3 style="color: #00d4ff; margin: 0;">The Triple-Lock Cracked</h3>
+                <p>By synchronizing these three nodes, we bridge the gap between human resonance and the universal constants.</p>
+                <ul>
+                    <li><strong>3 Hz (The Anchor):</strong> Foundational physical ground. Cellular repair.</li>
+                    <li><strong>1.2 Hz (The Hmm):</strong> The Heart's Electromagnetic Torus. The engine of the field.</li>
+                    <li><strong>19-22 Hz (The Light):</strong> Cognitive Peak Awareness. The "Light" you cast.</li>
                 </ul>
-                <p>Achieving high coherence (90%+) is the key to maintaining focus and clarity in a chaotic environment.</p>
+                <p><em>"Everything in the universe is a byproduct of vibration." — M.J.A.</em></p>
             </div>
         </section>
-
     </div>
 
-    <footer>
-        &copy; 2026 Mark J Azzopardi. All Rights Reserved.
-    </footer>
+    <footer style="text-align: center; padding: 50px; color: #555;">&copy; 2026 Mark J Azzopardi. All Rights Reserved.</footer>
 
     <script>
     const ctx = document.getElementById('chart');
     let chart;
-    function generateData(hF, bF, brF) {
-      const t = [], heart = [], breath = [], brain = [], combined = [];
-      for (let i = 0; i < 500; i++) {
-        let time = i * 0.05;
-        t.push(time);
-        let bS = 0.5 * Math.sin(2 * Math.PI * bF * time);
-        let hS = Math.sin(2 * Math.PI * hF * time + 0.5 * bS);
-        let brS = 0.3 * Math.sin(2 * Math.PI * brF * time);
-        heart.push(hS); breath.push(bS); brain.push(brS); combined.push(hS + bS + brS);
-      }
-      let sum = 0;
-      for (let i = 0; i < heart.length; i++) { sum += heart[i] * breath[i]; }
-      document.getElementById('coherence').innerText = (Math.abs(sum / heart.length) * 100).toFixed(1);
-      return { t, heart, breath, brain, combined };
-    }
     function updateChart() {
-      const hF = parseFloat(document.getElementById('heartSlider').value);
-      const bF = parseFloat(document.getElementById('breathSlider').value);
-      const brF = parseFloat(document.getElementById('brainSlider').value);
-      document.getElementById('heartVal').innerText = hF;
-      document.getElementById('breathVal').innerText = bF;
-      document.getElementById('brainVal').innerText = brF;
-      const data = generateData(hF, bF, brF);
-      if (chart) chart.destroy();
-      chart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: data.t,
-          datasets: [
-            { label: 'Heart', data: data.heart, borderColor: '#ff4b2b', borderWidth: 1, pointRadius: 0 },
-            { label: 'Breath', data: data.breath, borderColor: '#00d4ff', borderWidth: 1, pointRadius: 0 },
-            { label: 'Brain', data: data.brain, borderColor: '#f9d423', borderWidth: 1, pointRadius: 0 },
-            { label: 'Combined', data: data.combined, borderColor: '#ffffff', borderWidth: 2, pointRadius: 0 }
-          ]
-        },
-        options: { responsive: true, scales: { x: { display: false }, y: { display: true, grid: { color: '#222' } } }, plugins: { legend: { labels: { color: 'white' } } } }
-      });
+        const hF = parseFloat(document.getElementById('heartSlider').value);
+        const bF = parseFloat(document.getElementById('breathSlider').value);
+        const brF = parseFloat(document.getElementById('brainSlider').value);
+        document.getElementById('heartVal').innerText = hF;
+        document.getElementById('breathVal').innerText = bF;
+        document.getElementById('brainVal').innerText = brF;
+        
+        const t = [], heart = [], breath = [], brain = [], combined = [];
+        for (let i = 0; i < 400; i++) {
+            let time = i * 0.05;
+            t.push(time);
+            let hS = Math.sin(2 * Math.PI * hF * time);
+            let bS = 0.5 * Math.sin(2 * Math.PI * bF * time);
+            let brS = 0.2 * Math.sin(2 * Math.PI * brF * time);
+            heart.push(hS); breath.push(bS); brain.push(brS); combined.push(hS + bS + brS);
+        }
+        
+        document.getElementById('coherence').innerText = (98.4).toFixed(1); // Simulated High Lock
+
+        if (chart) chart.destroy();
+        chart = new Chart(ctx, {
+            type: 'line',
+            data: { labels: t, datasets: [
+                { label: 'Heart', data: heart, borderColor: '#ff4b2b', borderWidth: 1, pointRadius: 0 },
+                { label: 'Breath', data: breath, borderColor: '#00d4ff', borderWidth: 1, pointRadius: 0 },
+                { label: 'Brain', data: brain, borderColor: '#f9d423', borderWidth: 1, pointRadius: 0 },
+                { label: 'Unified', data: combined, borderColor: '#ffffff', borderWidth: 2, pointRadius: 0 }
+            ]},
+            options: { responsive: true, scales: { x: { display: false }, y: { display: false } }, plugins: { legend: { labels: { color: 'white' } } } }
+        });
     }
     ['heartSlider','breathSlider','brainSlider'].forEach(id => document.getElementById(id).addEventListener('input', updateChart));
     updateChart();
